@@ -46,6 +46,7 @@ has also been uploaded in the steady-state and dynamic folders for the correspon
 The equality constrained optimization problems have been solved using the Python-based open-source optimization modeling language, Pyomo v6.7.1 through the IDAES framework.
 
 More details about Pyomo can be found at: https://github.com/Pyomo/pyomo
+
 More details about IDAES can be found at: https://github.com/IDAES/idaes-pse
 
 One may follow the following installation instructions for downloading Python / Pyomo / IDAES:
