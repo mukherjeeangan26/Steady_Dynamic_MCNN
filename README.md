@@ -59,6 +59,14 @@ One may follow the following installation instructions for downloading Python / 
 
 Other libraries may be installed before running the Python notebooks, as necessary.
 
+In addition, to access the training / validation codes for the unconstrained all-nonlinear static-dynamic neural networks used in the dynamic MCNNs, please refer to the 
+following link: https://github.com/mukherjeeangan26/Hybrid_StaticDynamic_NN_Models. 
+Additional details about the unconstrained all-nonlinear network architectures and training algorithms have been discussed in the following publication:
+
+**Mukherjee, A.** & Bhattacharyya, D. "*Hybrid Series/Parallel All-Nonlinear Dynamic-Static Neural Networks: Development, Training, and Application to Chemical Processes*". 
+Ind. Eng. Chem. Res. 62, 3221–3237 (2023). DOI: https://pubs.acs.org/doi/full/10.1021/acs.iecr.2c03339
+
+
 
 
 
