@@ -39,7 +39,7 @@ optimal parameters for the equality constrained network models. Therefore, the I
 for both steady-state and dynamic MCNN. The open-sourced OPTI Toolbox can be accessed at the following link: https://github.com/jonathancurrie/OPTI
 
 The user requries to install OPTI in the MATLAB window by running the opti_Install.m and following recommended specifications. For reference, the OPTI_Master package
-has also been uploaded in the steady-state and dynamic folders for the corresponding MCNN codes.
+has also been uploaded in the steady-state MCNN folder for the corresponding MCNN codes.
 
 ### Pre-Requisites for Python Codes
 
