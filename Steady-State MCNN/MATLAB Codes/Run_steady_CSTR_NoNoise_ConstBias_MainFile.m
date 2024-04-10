@@ -15,8 +15,8 @@ clear
 % Load the training and validation datasets and specify the input and
 % output variables to the NN models
 % Note that the user can consider any steady-state dataset for training and
-% validation. The rows signify the time steps and the columns signify the 
-% input and output variables.
+% validation. The rows signify the observation indices for steady state data
+% and the columns signify the input and output variables.
 
 data = xlsread('Steady-State CSTR Data.xlsx','NoNoise');
 % data = xlsread('Steady-State CSTR Data.xlsx','ConstantBias+Gaussian Noise');
