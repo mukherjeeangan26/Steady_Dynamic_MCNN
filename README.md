@@ -38,8 +38,7 @@ issues, especially during dynamic optimization. Therefore, it is desired to impl
 optimal parameters for the equality constrained network models. Therefore, the IPOPT solver has been implemented through the OPTimization Interface (OPTI) Toolbox 
 for both steady-state and dynamic MCNN. The open-sourced OPTI Toolbox can be accessed at the following link: https://github.com/jonathancurrie/OPTI
 
-The user requries to install OPTI in the MATLAB window by running the opti_Install.m and following recommended specifications. For reference, the OPTI_Master package
-has also been uploaded in the steady-state MCNN folder for the corresponding MCNN codes.
+The user requries to install OPTI in the MATLAB window by running the opti_Install.m and following recommended specifications. 
 
 ### Pre-Requisites for Python Codes
 
