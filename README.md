@@ -40,9 +40,11 @@ for both steady-state and dynamic MCNN. The open-sourced OPTI Toolbox can be acc
 
 The user requries to install OPTI in the MATLAB window by running the **opti_Install.m** and following recommended specifications. 
 
-### Pre-Requisites for Python Codes
+### Pre-Requisites for Python / PYOMO Codes
 
 The equality constrained optimization problems have been solved using the Python-based open-source optimization modeling language, Pyomo v6.7.1 through the IDAES framework.
+Note that using the IDAES framework is not mandatory for running the codes uploaded in this repository. One may simply use the interior point optimization solver (IPOPT) in
+PYOMO to solve the constrained optimization problems proposed in this work. 
 
 More details about Pyomo can be found at: https://github.com/Pyomo/pyomo
 
@@ -55,6 +57,10 @@ One may follow the following installation instructions for downloading Python / 
   * Activate the new environment by: conda activate my-new-env
   * Install IDAES by: pip install idaes-pse
   * Get IDAES extensions by: idaes get-extensions
+  * If a user wants to dodge using IDAES framework, the easiest way to install a version of Ipopt is: conda install -c conda-forge ipopt. More information can be found in
+    PYOMO documentation (available online at: https://pyomo.readthedocs.io/en/stable/contributed_packages/parmest/index.html).  
+
+However, for latest updates on IDAES and installation commands, please look up the IDAES GitHub page (https://github.com/IDAES/idaes-pse). 
 
 Other libraries may be installed before running the Python notebooks, as necessary.
 
