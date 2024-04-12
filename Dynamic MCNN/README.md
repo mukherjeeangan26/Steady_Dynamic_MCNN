@@ -17,4 +17,8 @@ as discussed in the paper.
 candidate architectures available in various commercial Deep Learning packages.
 
 * Subsequent versions of this repository will include other combinations for MCNN implementation in dynamic modeling / optimization, as well as creating equivalent python notebooks for dynamic
-MCNN applications that can be readily used by other users.  
+MCNN applications that can be readily used by other users.
+
+For more details about the respective algorithms, please refer to the following publication:
+
+
