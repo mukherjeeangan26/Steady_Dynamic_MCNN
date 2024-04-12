@@ -1,10 +1,10 @@
-## Data Description
+# Data Description
 
 The excel spreadsheets provided here include steady-state and dynamic datasets for developing the MCNN model of the 
 isothermal continuous stirred tank reactor (CSTR) system using different types of noise characterizations in 
 training data.
 
-# Steady-State CSTR Data
+## Steady-State CSTR Data
 
 This spreadsheet contains 400 steady-state input-output datasets for the CSTR system. The model inputs are represented 
 by the inlet feed space velocity (F/V), and the concentration of all four reaction species in the feed stream (CAf, CBf, 
@@ -17,7 +17,7 @@ data to generate training data, i.e., no noise (where truth and measurements are
 additional zero-mean Gaussian noise, and random bias with an additional Gaussian noise distribution, respectively.
 
 
-# Dynamic CSTR Data
+## Dynamic CSTR Data
 
 This spreadsheet contains dynamic time-series (total duration of around 8000 time steps) input-output datasets for 
 the CSTR system. The model inputs are represented by the inlet feed space velocity (F/V), and the concentration of 
@@ -35,7 +35,7 @@ considers a single input, i.e., instantaneous volume of the reactor (V) which, a
 volumetric flow rate and inlet feed concentrations, account for the system holdup information to be utilized during model 
 development. The model output variables remain the same as the previous cases.
 
-# Color Code
+## Color Code
 
 The input and output variables have been color-coded in both excel spreadsheets attached for clarity --
   * The columns representing the variation in model inputs shown in 'light orange'
