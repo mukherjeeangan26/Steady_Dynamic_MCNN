@@ -21,4 +21,5 @@ MCNN applications that can be readily used by other users.
 
 For more details about the respective algorithms, please refer to the following publication:
 
+**Mukherjee, A.** & Bhattacharyya, D. "*On the Development of Steady-State and Dynamic Mass-Constrained Neural Networks Using Noisy Transient Data*". Comput. Chem. Eng. (Under Review)
 
