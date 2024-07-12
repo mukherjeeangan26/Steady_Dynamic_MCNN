@@ -218,7 +218,7 @@ for iter = 1:maxiter
     nlrhs = zeros((2*no*tn)+3*n_st,1);
     nle = [ones(2*no*tn,1);zeros(3*n_st,1)];
 
-    opts = optiset('solver','ipopt','display','iter','maxiter',1e2,'maxtime',20000); 
+    opts = optiset('solver','ipopt','display','iter','maxiter',1e3,'maxtime',20000); 
     Opt = opti('fun',obj,'ineq',[],[],'nlmix',nlcon,nlrhs,nle,'bounds',lb,ub,'options',opts);
 
     [w_sol,fval,exitflag,info] = solve(Opt,wd0);
