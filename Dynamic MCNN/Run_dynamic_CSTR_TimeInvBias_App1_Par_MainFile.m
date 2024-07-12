@@ -221,7 +221,7 @@ nlcon = @(x)InvProbV1Cons(x,Imat_t,tn,ni,nh,no,at_C_in_t,at_H_in_t,at_O_in_t,fv_
 nlrhs = zeros((2*no+3)*tn,1);
 nle = [ones(2*no*tn,1);zeros(3*tn,1)];
 
-opts = optiset('solver','ipopt','display','iter','maxiter',2,'maxtime',1200); 
+opts = optiset('solver','ipopt','display','iter','maxiter',1e3,'maxtime',1200); 
 Opt = opti('fun',obj,'ineq',[],[],'nlmix',nlcon,nlrhs,nle,'bounds',lb,ub,'options',opts);
 
 [w_sol,fval,exitflag,info] = solve(Opt,w0);
