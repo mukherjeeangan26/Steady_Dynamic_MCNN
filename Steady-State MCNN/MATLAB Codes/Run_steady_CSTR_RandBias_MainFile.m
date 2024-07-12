@@ -228,7 +228,7 @@ nlcon = @(x)InvProbV2Cons(x,Imat_t,tn,ni,nh,no,at_C_in_t,at_H_in_t,at_O_in_t,fv_
 nlrhs = zeros((2*no+3)*tn,1);
 nle = [ones(2*no*tn,1);zeros(3*tn,1)];
 
-opts = optiset('solver','ipopt','display','iter','maxiter',1e2,'maxtime',1200); 
+opts = optiset('solver','ipopt','display','iter','maxiter',1e3,'maxtime',1200); 
 Opt = opti('fun',obj,'ineq',[],[],'nlmix',nlcon,nlrhs,nle,'bounds',lb,ub,'options',opts);
 
 [w_sol,fval,exitflag,info] = solve(Opt,w0);
@@ -401,7 +401,7 @@ nlcon_v = @(x)ForwProbV1Cons(x,ynn_v,tv,no,at_C_in_v,at_H_in_v,at_O_in_v,fv_in_v
 nlrhs_v = zeros((no+3)*tv,1);
 nle_v = [ones(no*tv,1);zeros(3*tv,1)];
 
-opts_v = optiset('solver','ipopt','display','iter','maxiter',1e2,'maxtime',1000); 
+opts_v = optiset('solver','ipopt','display','iter','maxiter',1e3,'maxtime',1000); 
 Opt_v = opti('fun',obj_v,'ineq',[],[],'nlmix',nlcon_v,nlrhs_v,nle_v,'bounds',lb,ub,'options',opts_v);
 
 [ynn_v_r,fval_r,exitflag_r,info_r] = solve(Opt_v,ynn_v0);
