@@ -9,7 +9,7 @@ check1 = Inf;
 
 x_in = Imat_t;
 
-net_s = feedforwardnet(2*nh,'trainlm');
+net_s = feedforwardnet(nh,'trainlm');
 net_s.layers{1}.transferFcn = 'logsig';
 net_s.layers{2}.transferFcn = 'purelin';
 net_s.trainParam.max_fail = 2000;
@@ -33,7 +33,7 @@ while iter <= maxiter && term_crit >= tol
 
     inputDelays = 0;
     feedbackDelays = 1;
-    hiddenLayerSize = 2*nh;
+    hiddenLayerSize = nh;
     netnarx_d = narxnet(inputDelays,feedbackDelays,hiddenLayerSize,'closed',trainFcn);
 
     netnarx_d.inputs{1}.processFcns = {'removeconstantrows','mapminmax'};
