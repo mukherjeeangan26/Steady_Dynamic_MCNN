@@ -3,7 +3,7 @@ MATLAB Codes and Python Notebooks for developing steady-state and dynamic Mass C
 
 Author: Angan Mukherjee (am0339@mix.wvu.edu)
 
-Last Page Update: May 9, 2024
+Last Page Update: Oct 10, 2024
 
 # Announcement
 
